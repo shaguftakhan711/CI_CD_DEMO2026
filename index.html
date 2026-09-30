@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CI/CD Demo</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>CI/CD Demo</h1>
+        <p>System Integration & Deployment</p>
+    </header>
+
+    <main>
+
+        <section class="intro">
+            <h2>Welcome to the CI/CD Demo</h2>
+
+            <p>
+                This website demonstrates how source code moves from
+                development to testing, integration and deployment.
+            </p>
+        </section>
+
+        <section class="pipeline">
+
+            <div class="step">
+                <h3>1. Code</h3>
+                <p>Developer writes code.</p>
+            </div>
+
+            <div class="arrow">→</div>
+
+            <div class="step">
+                <h3>2. Git</h3>
+                <p>Code is committed.</p>
+            </div>
+
+            <div class="arrow">→</div>
+
+            <div class="step">
+                <h3>3. GitHub</h3>
+                <p>Code is pushed to GitHub.</p>
+            </div>
+
+            <div class="arrow">→</div>
+
+            <div class="step">
+                <h3>4. CI</h3>
+                <p>Code is automatically tested.</p>
+            </div>
+
+        </section>
+
+        <button onclick="runDemo()">
+            Run CI Demo
+        </button>
+
+        <div id="output"></div>
+
+    </main>
+
+    <footer>
+        <p>System Integration & Deployment</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
