@@ -11,3 +11,15 @@ function runDemo() {
         ✓ CI Pipeline Successful!
     `;
 }
+function makeChange() {
+
+    const output = document.getElementById("changeOutput");
+
+    output.innerHTML = `
+        <strong>Developer changed the code.</strong>
+        <br><br>
+        Code is now ready to be committed to Git.
+        <br><br>
+        <strong>Next step → git commit</strong>
+    `;
+}
