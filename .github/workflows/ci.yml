@@ -25,12 +25,15 @@ jobs:
           echo "Checking project files..."
           ls
 
-      - name: Run tests
-        run: |
-          echo "Running automated tests..."
-          echo "All tests passed!"
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
 
+      - name: Run automated tests
+        run: node test.js
+        
       - name: Build application
         run: |
           echo "Building application..."
-          echo "Build successful!"
+          echo "Build successfgit add .ul!"
