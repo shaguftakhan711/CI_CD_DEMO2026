@@ -35,5 +35,13 @@ jobs:
         
       - name: Build application
         run: |
-          echo "Building application..."
-          echo "Build successfgit add .ul!"
+            mkdir build
+            cp index.html build/
+            cp style.css build/
+            cp script.js build/
+            echo "Build completed successfully"
+
+      - name: Verify build
+        run: |
+            echo "Build contents:"
+            ls -la build
